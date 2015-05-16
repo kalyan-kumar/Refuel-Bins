@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/kalyan/rosbuild_ws/Refuel-Bins/task_bin/build/devel/setup.sh

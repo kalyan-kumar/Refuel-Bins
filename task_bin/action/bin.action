@@ -5,4 +5,5 @@ int32 order
 int32[] sequence
 ---
 #feedback
-int32[] sequence
+int32 errorx
+int32 errory

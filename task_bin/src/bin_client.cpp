@@ -1,7 +1,7 @@
 #include <ros/ros.h>
 #include <actionlib/client/simple_action_client.h>
 #include <actionlib/client/terminal_state.h>
-#include <task_buoy/binAction.h>
+#include <task_bin/binAction.h>
 
 typedef actionlib::SimpleActionClient<task_bin::binAction> Client;
 

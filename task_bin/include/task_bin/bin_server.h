@@ -20,7 +20,7 @@ private:
 	image_transport::ImageTransport _it;
 	image_transport::Subscriber _sub;
 	image_transport::Publisher _pub;
-	Mat _image;
+	Mat _image, templ;
 	task_bin::binFeedback _feedback;
 	task_bin::binResult _result;
 	std::string _actionName;
@@ -28,4 +28,7 @@ private:
 public:
 	Bin(std::string_name);
 	void executeCB(const task_bin::binGoalConstPtr &_goal);
+	void imageCallBack(const sensor_msgs::ImageConstPtr &msg);
 	Point tempMatch(Mat feed_image, Mat templ);
+	~Bin();
+}
